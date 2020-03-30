@@ -1,12 +1,16 @@
 <script>
 	export let name;
+	import Form from "./components/Form.svelte"
 </script>
-
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
+<section class="section">
+ <div class="container">
+	<main>
+		<h1 class="title">Hello {name}!</h1>
+		<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+		<Form />
+	</main>
+ </div>
+</section>
 <style>
 	main {
 		text-align: center;
